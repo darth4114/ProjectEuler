@@ -1,16 +1,12 @@
-test = False
-nums = [i for i in range(3,21)]
-test_num = 10
+num = 1
+for x in range(1,21):
+    if num % x > 0:
+        for y in range(1,21):
+            if (num * y) % x == 0:
+                num *= y
+                break
 
-while not test:
-    for num in nums:
-        if test_num%num != 0:
-            test_num += 10
-            break
-        elif test_num%num == 0
-            test = True
-
-print(test_num)
+print(num)
 
 # i = 1
 # for k in (range(1, 21)):
